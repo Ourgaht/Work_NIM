@@ -12,6 +12,7 @@ function find__next_state(counter){
 }
 
 function load_frame(counter){
-	
+
 }
 
+export default find__previous_state;
