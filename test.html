@@ -6,12 +6,30 @@
       <script type="text/javascript" src="animation.js"></script>
    </head>
 
-   <body>
-     <h1>Welcome to the testing page</h1>
-      <input type = "button" onclick = "hello();" name = "ok" value = "Click Me" />
-      <input type = "button" onclick = 'test__previous_state();' name = "ok" value = "Previous" />
-      <input type = "button" onclick = 'test__next_state();' name = "ok" value = "Next" />
-      <input type = "button" onclick = "show_image("Test/Images/0.png", 400, 400, "test first image");" name = "ok" value = "test image" />
+   <body onload="NextImage ('myImg')">
+    <h1>Welcome to the testing page</h1>
+    <center>
+      <button onclick="NextImage ('myImg')">Next Image</button>
+      <button onclick="PreviousImage ('myImg')">Previous Image</button>
+      <br /><br />
+      <img id="myImg" width="600px" height="600px" />
+    </center>
+
+      <!--<input type = "button" onclick = "hello();" name = "ok" value = "Click Me" />
+      <input type = "button" onclick = 'test__previous_state();' name = "ok" value = "Previous Test" />
+      <input type = "button" onclick = 'test__next_state();' name = "ok" value = "Next Test" />
+      <center>
+        <button onclick=
+          "load_frame(counter);">Start
+        </button>
+        <button onclick=
+          "load__next_frame(counter);">Next image
+        </button>
+        <button onclick=
+          "load__previous_frame(counter);">Previous image
+        </button>
+      </center>-->
+
    </body>
 
 </html>
