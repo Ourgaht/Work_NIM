@@ -3,14 +3,18 @@
 
    <head>
       <title>Test script</title>
+      <div class='header__logo'>
+        <img src='Test/Images/logo_NIM.png' alt='National Institute of Metrologia'>
+      </div>
+      <a href='about_us.html'>About us</a>
       <script type="text/javascript" src="animation.js"></script>
    </head>
 
    <body onload="NextImage ('myImg')">
     <h1>Welcome to the testing page</h1>
     <center>
-      <button onclick="NextImage ('myImg')">Next Image</button>
       <button onclick="PreviousImage ('myImg')">Previous Image</button>
+      <button onclick="NextImage ('myImg')">Next Image</button>
       <br /><br />
       <img id="myImg" width="600px" height="600px" />
     </center>
