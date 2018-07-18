@@ -76,7 +76,7 @@
     var elements = html5.elements;
     return typeof elements == 'string' ? elements.split(' ') : elements;
   }
-  
+
     /**
    * Returns the data associated to the given document
    * @private
