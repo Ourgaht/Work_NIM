@@ -34,14 +34,23 @@
 
     <img class="imgl" src="" alt="Picture of Machine" width="125" height="125">
     <a class='right' href="https://www.nist.gov/pml/time-and-frequency-division/atomic-standards/common-view-gps-time-transfer">Source from NIST</a>
+    <a class='right' href='../../Source_Document/GPS COMMON-VIEW TIME TRANSFER1.pdf'>Research paper from NIM</a>
     <p class='right'>The GPS common-view time transfer method has been introduced in  the beggining of the 1980s. It led to an immediate improvement of international time comparaison. It responds to the need of more accurate ways to synchronise clocks from all over the world, indeed, atomics clocks were already really precise, the majority of uncertainty came from the previous means of comparaison.
     <p class='right'>It allows the comparaison of two clocks at differents locations in real time. To do this, a satellite sends a one-way signal to the both stations which want their clock synchronized. This signal tells the time the satellite has, so both clock set their time according to the signal. However, considering the distance between the first station and the satelitte and the second station and the satellite is different, they will not receive the signal at the same time, moreover, even though there would be at exact same distance, the quality of the receiver can also impact the synchronisation (remember, we want to be precise at a precision from 1 to 10 ns).  Thus, a slight <b>delay</b> will appear between these two clocks. </p>
 
 
     <h2 class="right">Real Time Remote Calibration</h2><br></br>
     <img class="imgr" src="" alt="Picture of Machine" width="125" height="125">
-    <p class="left">The Real Time Remote Calibration is what allows </p>
-    <center><img src="../../RTRC_figure.png" alt="Illustration of the communication" witdh="900" height="600"></center>
+    <a class='left' href='https://tf.nist.gov/general/pdf/2170.pdf'>Source from NIST</a>
+    <a class='left' href='../../Source_Document/UFFC2013-001604.pdf'>Research paper from NIM</a>
+    <p class="left">As explained before, the GPS common-view method alone is not enough to reach our desired precision, we want our clocks to be synchronised. Before, we used to simply do the calibration ourselves, which means laboratories that wanted their clock to be synchronised had to send their clock to us, so we could synchronised them to our and we would send back to them. Problem is, it was not really effective, the shipment would cause time information to be lost, and we would be back to the same issue. Thus, the RTRC method was developped :</p>
+    <p class='left'>Each user who uses RTRC will receive one GNSS time and frequency transfer receiver of NIMTFGNSS-1[1]  type(NIMGNSS-1 for short) and client software that performs the measurements and sends the instant results to RTRC central server for data storage and processing via internet. RTRC uses GNSS system as the common-view reference.</p>
+    <p class="left">The time difference between two stations is calculated by processing of RTRC central server in real-time and the real-time or historical difference can be displayed on the webpage whenever the user logs on the RTRC web site. The illustration below shows the typical process of synchronisation between several clocks.</p>
+    <center><img src="../../RTRC_figure.png" alt="Illustration of the communication" witdh="750" height="500"></center>
+    <p class='left'>If it's still not perfectly understandable for you, the analogy from NIST should make it clearer : Imagine two people living at opposite ends of a small town who want to compare the time displayed by the grandfather clocks in their living rooms. This would be an easy problem to solve if they them side by side. However, moving the clocks would be difficult and is not practical or desirable. Therefore, each person agrees to write down the time displayed by their clock when a fire  whistle  (located  midway  between  them)  blows  in  their town, an event that happens periodically. After writing down the readings, they call or email each other and exchange the time readings. If the first clock read 12:01:35 and the second clock read 12:01:47, then simple subtraction tells them that the second clock was 12 seconds ahead of the first clock when the fire whistle blew. The time when the fire whistle blew is unim- portant. It only matters that it was heard at the same time, and that a simultaneous measurement was made at both houses. If so, the measurement reveals the time difference between the two grandfather clocks and the comparison was successful
+    <h2 class='left'>Disciplined Oscillator System</h2><br></br>
+
+    <center><img src="../../NIMDO_principle.png" alt="NIMDO principle" witdh="600" height="400"></center>
   </div>
 </div>
 <!-- ####################################################################################################### -->
