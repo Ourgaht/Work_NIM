@@ -37,6 +37,8 @@
     <a class='right' href='../../Source_Document/GPS COMMON-VIEW TIME TRANSFER1.pdf'>Research paper from NIM</a>
     <p class='right'>The GPS common-view time transfer method has been introduced in  the beggining of the 1980s. It led to an immediate improvement of international time comparaison. It responds to the need of more accurate ways to synchronise clocks from all over the world, indeed, atomics clocks were already really precise, the majority of uncertainty came from the previous means of comparaison.
     <p class='right'>It allows the comparaison of two clocks at differents locations in real time. To do this, a satellite sends a one-way signal to the both stations which want their clock synchronized. This signal tells the time the satellite has, so both clock set their time according to the signal. However, considering the distance between the first station and the satelitte and the second station and the satellite is different, they will not receive the signal at the same time, moreover, even though there would be at exact same distance, the quality of the receiver can also impact the synchronisation (remember, we want to be precise at a precision from 1 to 10 ns).  Thus, a slight <b>delay</b> will appear between these two clocks. </p>
+    <img class='imgr' src='../../graphe/GNSS_graph.png' alt='' width="450" height="300">
+    <img class='imgl' src='../../graphe/GNSS_graph2.png' alt='' width="450" height="300"><br></br>
 
 
     <h2 class="right">Real Time Remote Calibration</h2><br></br>
@@ -49,17 +51,20 @@
     <center><img src="../../RTRC_figure.png" alt="Illustration of the communication" witdh="750" height="500"></center>
 
     <p class='left'>You can see below the results of some of our experiments :</p>
-    <img class="" src='../../graphe/RTRC_graph.png' alt='' width="500" height="333">
-
+    <center>
+      <img class="" src='../../graphe/RTRC_graph.png' alt='' width="500" height="333">
+    </center>
     <h2 class='left'>Disciplined Oscillator System</h2><br></br>
     <!-- Does not render really well<img class="imgl" src="../../NIMDO_picture.png" alt="Picture of Machine" width="200" height="175">-->
     <p class='right'>
       <a class='right' href='../../Source_Document/NIMDO_EFTF2014.pdf'>Research paper from NIM</a>
     </p>
-    <p class='right'>NIMDO is the significant extension of RTRC</p>
+    <p class='right'>NIMDO is the significant extension of RTRC, it's used to enhance the accuracy of of the system and allows the whole process to be done in real time.</p>
     <p class="right">Here are the fimal results of our experiments :</p>
     <!--<img class='imgl' src='../../graphe/NIMDO_graph.png' alt='' width="375" height="250">-->
-    <img class='imgr' src='../../graphe/NIMDO_graph2.png' alt='' width="375" height="250">
+    <img class='imgr' src='../../graphe/NIMDO_graph.png' alt='' width="450" height="300">
+    <img class='imgl' src='../../graphe/NIMDO_graph2.png' alt='' width="450" height="300"><br></br>
+    <p class='right'>As you can see on the graph on the left, while NIMDO starts slower, it achieves better frequency stabilities.</p>
 
     <!--<center><img src="../../NIMDO_principle.png" alt="NIMDO principle" witdh="600" height="400"></center>-->
   </div>
