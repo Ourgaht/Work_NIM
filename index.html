@@ -3,7 +3,7 @@
 <head>
 <title>NIM Time and Frequency department</title>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="styles/layout.css" type="text/css">
+<link rel="stylesheet" href="Template/basic-4/styles/layout.css" type="text/css">
 <!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
 </head>
 <body>
@@ -16,14 +16,15 @@
 <div class="wrapper row2">
   <div id="container" class="clear">
     <h1>Who are we ?</h1>
-    <img class="imgr" src="../../logo_NIM.jpg" alt="Logo NIM">
+    <img class="imgr" src="logo_NIM.jpg" alt="Logo NIM">
     <p class="center">We are a team of researcher in the Time and Frequency department at National Institute of Metrologia (NIM). Our work consists of synchronising all atomics clocks from all over the world to a reference clock in real time using GPS common-view time transfer, Real Time Remote Calibration (RTRC) and NIM Disciplined Oscillator system (NIMDO).</p>
     <p class='left'>Our team is composed of the following scientists :
     <ul>
       <li>Dr Liang Kun, vice director of NIM Time and Frequency department</li>
       <li>else</li>
       <li>else</li>
-      <li>else etc</li>
+      <li>Something</li>
+
     </ul>
     <p class="justify"><!--This text is aligned left and right - &quot;Justified&quot;.--> Below, we will try to do our best to try to explain the principle of our work.</p>
     <ul>
@@ -32,19 +33,20 @@
       </li>
     </ul>
 
+    <!--<a href='https://www.baidu.com'>Link to baidu</a>-->
     <!--<img class="imgl" src="" alt="Picture of Machine" width="125" height="125">-->
     <a class='right' href="https://www.nist.gov/pml/time-and-frequency-division/atomic-standards/common-view-gps-time-transfer">Source from NIST</a>
-    <a class='right' href='../../Source_Document/GPS COMMON-VIEW TIME TRANSFER1.pdf'>Research paper from NIM</a>
+    <a class='right' href='Source_Document/GPS COMMON-VIEW TIME TRANSFER1.pdf'>Research paper from NIM</a>
     <p class='right'>The GPS common-view time transfer method has been introduced in  the beggining of the 1980s. It led to an immediate improvement of international time comparaison. It responds to the need of more accurate ways to synchronise clocks from all over the world, indeed, atomics clocks were already really precise, the majority of uncertainty came from the previous means of comparaison.
     <p class='right'>It allows the comparaison of two clocks at differents locations in real time. To do this, a satellite sends a one-way signal to the both stations which want their clock synchronized. This signal tells the time the satellite has, so both clock set their time according to the signal. However, considering the distance between the first station and the satelitte and the second station and the satellite is different, they will not receive the signal at the same time, moreover, even though there would be at exact same distance, the quality of the receiver can also impact the synchronisation (remember, we want to be precise at a precision from 1 to 10 ns).  Thus, a slight <b>delay</b> will appear between these two clocks. </p>
-    <img class='imgr' src='../../graphe/GNSS_graph.png' alt='' width="450" height="300">
-    <img class='imgl' src='../../graphe/GNSS_graph2.png' alt='' width="450" height="300"><br></br>
+    <img class='imgr' src='graphe/GNSS_graph.png' alt='' width="450" height="300">
+    <img class='imgl' src='graphe/GNSS_graph2.png' alt='' width="450" height="300"><br></br>
 
 
     <h2 class="right">Real Time Remote Calibration</h2><br></br>
     <!--<img class="imgr" src="" alt="Picture of Machine" width="125" height="125">-->
     <a class='left' href='https://tf.nist.gov/general/pdf/2170.pdf'>Source from NIST</a>
-    <a class='left' href='../../Source_Document/UFFC2013-001604.pdf'>Research paper from NIM</a>
+    <a class='left' href='Source_Document/UFFC2013-001604.pdf'>Research paper from NIM</a>
     <p class="left">As explained before, the GPS common-view method alone is not enough to reach our desired precision, we want our clocks to be synchronised. Before, we used to simply do the calibration ourselves, which means laboratories that wanted their clock to be synchronised had to send their clock to us, so we could synchronised them to our and we would send back to them. Problem is, it was not really effective, the shipment would cause time information to be lost, and we would be back to the same issue. Thus, the RTRC method was developped :</p>
     <p class='left'>Each user who uses RTRC will receive one GNSS time and frequency transfer receiver and client software that performs the measurements and sends the instant results to RTRC central server for data storage and processing via internet. RTRC uses GNSS system as the common-view reference.</p>
     <p class="left">The time difference between two stations is calculated by processing of RTRC central server in real-time and the real-time or historical difference can be displayed on the webpage whenever the user logs on the RTRC web site. The illustration below shows the typical process of synchronisation between several clocks.</p>
@@ -52,18 +54,18 @@
 
     <p class='left'>You can see below the results of some of our experiments :</p>
     <center>
-      <img class="" src='../../graphe/RTRC_graph.png' alt='' width="500" height="333">
+      <img class="" src='graphe/RTRC_graph.png' alt='' width="500" height="333">
     </center>
     <h2 class='left'>Disciplined Oscillator System</h2><br></br>
     <!-- Does not render really well<img class="imgl" src="../../NIMDO_picture.png" alt="Picture of Machine" width="200" height="175">-->
     <p class='right'>
-      <a class='right' href='../../Source_Document/NIMDO_EFTF2014.pdf'>Research paper from NIM</a>
+      <a class='right' href='Source_Document/NIMDO_EFTF2014.pdf'>Research paper from NIM</a>
     </p>
-    <p class='right'>NIMDO is the significant extension of RTRC, it's used to enhance the accuracy of of the system and allows the whole process to be done in real time.</p>
+    <p class='right'>NIMDO is the significant extension of RTRC, it's used to enhance the accuracy of the system and allows the whole process to be done in real time.</p>
     <p class="right">Here are the fimal results of our experiments :</p>
     <!--<img class='imgl' src='../../graphe/NIMDO_graph.png' alt='' width="375" height="250">-->
-    <img class='imgr' src='../../graphe/NIMDO_graph.png' alt='' width="450" height="300">
-    <img class='imgl' src='../../graphe/NIMDO_graph2.png' alt='' width="450" height="300"><br></br>
+    <img class='imgr' src='graphe/NIMDO_graph.png' alt='' width="450" height="300">
+    <img class='imgl' src='graphe/NIMDO_graph2.png' alt='' width="450" height="300"><br></br>
     <p class='right'>As you can see on the graph on the left, while NIMDO starts slower, it achieves better frequency stabilities.</p>
 
     <!--<center><img src="../../NIMDO_principle.png" alt="NIMDO principle" witdh="600" height="400"></center>-->
@@ -74,7 +76,7 @@
   <footer id="footer" class="clear">
     <h1>Footer</h1>
     <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">NIM research laboratory</a></p>
-    <p class="fl_right"><a target="_blank" href="../../about_us.html">About us</a></p>
+    <p class="fl_right"><a target="_blank" href="about_us.html">About us</a></p>
     <p class="fl_right">Design by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a>/</p>
   </footer>
 </div>
